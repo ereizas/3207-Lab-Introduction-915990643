@@ -3,6 +3,15 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(){
+char randchar();
 
+int main(){
+srand((unsigned) time(NULL));
+printf("%c",randchar());
+}
+
+char randchar()
+{
+short randNum = (rand() % (90-65+1) + 65;
+return (char) randNum; 
 }
